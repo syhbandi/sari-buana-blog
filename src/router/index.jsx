@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import KebijakanPrivasi from "../pages/Kebijakan-privasi";
 import Home from "../pages/home";
+import SyaratKetentuan from "../pages/Syarat-ketentuan";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "syarat-ketentuan",
-        element: <KebijakanPrivasi />,
+        element: <SyaratKetentuan />,
       },
     ],
     errorElement: <>Error router</>,

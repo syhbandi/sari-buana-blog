@@ -12,7 +12,7 @@ const Navbar = () => {
   }, [location]);
   return (
     <div className="bg-white shadow font-poppins sticky top-0">
-      <div className="container mx-auto md:px-10 flex items-center justify-between px-3 py-4">
+      <div className="md:container md:mx-auto md:px-10 flex items-center justify-between px-4 py-4">
         <div className="font-semibold flex items-center gap-2">
           <img src={logo} alt="logo" className="w-6 h-6 object-contain" />
           <span className="text-xl">SARI BUANA</span>
@@ -41,7 +41,7 @@ const Navbar = () => {
             <div
               className={`absolute top-0 right-0 bg-white shadow w-64 h-full animate-menuOpen`}
             >
-              <div className="flex items-center justify-end pr-3 py-5">
+              <div className="flex items-center justify-end pr-4 py-5">
                 <button onClick={() => setIsExpand(false)}>
                   <MdClose className="text-2xl" />
                 </button>
