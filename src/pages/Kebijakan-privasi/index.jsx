@@ -25,7 +25,7 @@ const KebijakanPrivasi = () => {
       <h1 className="text-2xl font-semibold mb-3">Privacy Policy</h1>
       <div
         dangerouslySetInnerHTML={{ __html: data.artikel }}
-        className="ck-content font-roboto"
+        className="ck-content font-roboto break-words"
       />
     </div>
   );
