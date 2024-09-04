@@ -26,11 +26,11 @@ const SyaratKetentuan = () => {
     );
 
   return (
-    <div className="container mx-auto md:px-10 px-4 mt-6">
+    <div className="container mx-auto px-5 max-w-7xl mt-6">
       <h1 className="text-2xl font-semibold mb-3">Term & Condition</h1>
       <div
         dangerouslySetInnerHTML={{ __html: data.artikel }}
-        className="ck-content font-roboto break-words"
+        className="ck-content font-roboto break-words text-justify"
       />
     </div>
   );

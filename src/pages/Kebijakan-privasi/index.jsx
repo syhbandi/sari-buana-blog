@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getArticles } from "../../api/artikel";
 import "./style.css";
 
@@ -21,11 +21,11 @@ const KebijakanPrivasi = () => {
       <div className="mt-6 container mx-auto px-4">{query.error?.message}</div>
     );
   return (
-    <div className="container mx-auto px-4 md:px-10 mt-6">
+    <div className="container mx-auto px-5 max-w-7xl mt-6">
       <h1 className="text-2xl font-semibold mb-3">Privacy Policy</h1>
       <div
         dangerouslySetInnerHTML={{ __html: data.artikel }}
-        className="ck-content font-roboto break-words"
+        className="ck-content font-roboto break-words text-justify"
       />
     </div>
   );

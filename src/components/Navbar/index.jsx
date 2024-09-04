@@ -1,18 +1,18 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MdClose, MdMenu } from "react-icons/md";
 import logo from "../../assets/SRA.png";
+import { navMenu } from "./NavMenu";
 
 const Navbar = () => {
   const [isExpand, setIsExpand] = useState(false);
   const location = useLocation();
-  const navbarRef = useRef(null);
   useEffect(() => {
     setIsExpand(false);
   }, [location]);
   return (
     <div className="bg-white shadow font-poppins sticky top-0">
-      <div className="md:container md:mx-auto md:px-10 flex items-center justify-between px-4 py-4">
+      <div className="container mx-auto px-5 max-w-7xl flex items-center justify-between py-4">
         <div className="font-semibold flex items-center gap-2">
           <img src={logo} alt="logo" className="w-6 h-6 object-contain" />
           <span className="text-xl">SARI BUANA</span>
@@ -20,9 +20,9 @@ const Navbar = () => {
         <div className="flex items-center">
           {/* navbar desktop */}
           <div className=" items-center gap-6 hidden md:flex">
-            {["Home"].map((menu, index) => (
-              <Link key={index} to={"/"}>
-                {menu}
+            {navMenu.map((menu, index) => (
+              <Link key={index} to={menu.href}>
+                {menu.title}
               </Link>
             ))}
           </div>
