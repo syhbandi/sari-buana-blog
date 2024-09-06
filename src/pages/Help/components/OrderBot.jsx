@@ -2,7 +2,12 @@ import orderJPG from "./../../../assets/ordering.jpg";
 const OrderBot = () => {
   return (
     <div className="w-full md:">
-      <img src={orderJPG} alt="ordering picture" className="w-full" />
+      <img
+        src={orderJPG}
+        loading="lazy"
+        alt="ordering picture"
+        className="w-full"
+      />
       <ol className="list-decimal mt-5">
         <li>
           Make sure you have Sari Buana account and verified WhatsApp number
