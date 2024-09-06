@@ -27,8 +27,9 @@ const TopicPage = () => {
           { title: topic.title, active: true },
         ]}
       />
-      <section className="my-20">
+      <section className="my-20 w-full md:max-w-3xl mx-auto">
         <h1 className="text-4xl font-semibold text-center">{topic.title}</h1>
+        <div className="text-justify mt-10">{topic.content}</div>
       </section>
       <CategoriesList />
     </main>

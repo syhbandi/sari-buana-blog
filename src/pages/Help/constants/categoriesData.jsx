@@ -1,5 +1,6 @@
 import { FiUser } from "react-icons/fi";
 import { CiReceipt } from "react-icons/ci";
+import OrderBot from "../components/OrderBot";
 
 export const categoriesData = [
   {
@@ -12,7 +13,7 @@ export const categoriesData = [
     icon: <CiReceipt className="text-2xl" />,
     description: "Everything you need to know about ordering in Sari Buana",
     topics: [
-      { title: "How to order via WhatsApp Bot" },
+      { title: "How to order via WhatsApp Bot", content: <OrderBot /> },
       { title: "How to order via App" },
     ],
   },
