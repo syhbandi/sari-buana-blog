@@ -8,7 +8,7 @@ const OrderBot = () => {
         alt="ordering picture"
         className="w-full"
       />
-      <ol className="list-decimal mt-5">
+      <ol className="list-decimal mt-5 ps-3">
         <li>
           Make sure you have Sari Buana account and verified WhatsApp number
         </li>

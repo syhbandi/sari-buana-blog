@@ -47,9 +47,9 @@ const Navbar = () => {
                 </button>
               </div>
               <div className="px-6 flex flex-col gap-3">
-                {["Home"].map((menu, index) => (
-                  <Link key={index} to={"/"}>
-                    {menu}
+                {navMenu.map((menu, index) => (
+                  <Link key={index} to={menu.href}>
+                    {menu.title}
                   </Link>
                 ))}
               </div>
